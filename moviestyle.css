@@ -1,0 +1,89 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(135deg, #0f2027,#203a43,#2c5364);
+    color:#ffffff;
+    display:flex;
+    flex-direction:column;
+    min-height: 100vh;
+}
+.header nav{
+    background: rgba(0,0,0,0.7);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:20px 0;
+}
+.header .name{
+    text-align:center;
+}
+.links a{
+    color:#ffffff;
+    text-decoration: none;
+    margin-left:20px;
+    font-weight: 500;
+}
+.content{
+    text-align:center;
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:1rem;
+}
+.btn{
+    text-decoration: none;
+    padding:10px;
+    border-radius:17px;
+    display:inline-block;
+    margin-top:2rem;
+    color:#ffffff;
+    border:1px solid #00e0ff;
+    background-color:#2c5364;
+}
+footer ul{
+    list-style: none;
+    display:flex;
+    gap:2rem;
+    justify-content: center;
+}
+footer p{
+    text-align: center;
+}
+.sec{
+    background:rgba(0,0,0,0.6);
+    border-radius:2rem;
+    box-shadow:0 15px 30px rgba(0,0,0,0.45);
+    width:100%;
+    max-width: 280px;
+    padding:2rem;   
+}
+@media screen and (min-width:768px){
+    .header nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header .name{
+        margin-left:3rem;
+    }
+    .header .links{
+        margin-right:3rem;
+    }
+    .links a:hover{
+        color:#00e0ff;
+    }
+    .sec{
+        max-width:450px;
+    }
+    .btn:hover{
+        background-color: #00e0ff;
+        color:#000;
+    }
+}
+@media screen and (min-width:1024px){
+    .sec{
+        max-width:650px;
+    }
+}
